@@ -7,9 +7,12 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #E8E8E8;
+    background-image: url('../images/bg.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 footer{
-    position: fixed;
     bottom: 0px;
     width: 100%;
 }
@@ -26,7 +29,7 @@ footer{
     color: white;
     margin-top: 25px;
 }
-.span-h1{
+.header-span-h1{
     color: #EAEAEB;
     font-weight: 300;
 }
@@ -76,9 +79,6 @@ img{
     display: grid;
     place-content: center;
 }
-.p-two{
-    float: right;
-}
 
 .images h6{
     padding:4px;
@@ -98,7 +98,25 @@ img{
     margin-left: 25px;
     margin-right: 15px;
 }
-.span-p2{
+.bottom-p-two{
+    float: right;
+ }
+.bottom-span-p2{
     font-weight: bold;
     font-size: small;
+}
+@media(max-width:992px){
+    .footer-header{
+        flex-direction: column;
+    }
+    .images{
+        flex-wrap: wrap;
+    }
+    .footer-bottom{
+        
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    }
 }
